@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { useLocation } from "react-router";
+import { createBrowserHistory } from "history";
+import Signin from "./Component/Auth/Signin";
+import Signup from "./Component/Auth/Register";
+import Dashboard from "./Component/Dashboard/dashboard";
+import CreateEvent from "./Component/Events/createNewEvents";
+import MyEvents from "./Component/Events/myEvents";
+import EventDetails from "./Component/Events/eventsDetails";
 
 function App() {
+  const history = createBrowserHistory();
+  //const location = useLocation();
+
+  console.log(history);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history={history}>
+      <Routes>
+        <Route exact path="/" element={<Signin />} />
+        <Route exact path="/signup" element={<Signup />} />
+        <Route exact path="/dashboard" element={<Dashboard />} />
+        <Route exact path="/createEvent" element={<CreateEvent />} />
+        <Route exact path="/myEvents" element={<MyEvents />} />
+        <Route exact path="/eventDetails" element={<EventDetails />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,0 +1,134 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  float: left;
+  width: 190px;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  /* background-color: var(--Primary); */
+}
+
+@media (min-width: 1660px) {
+  .sidebar {
+    width: 232px;
+  }
+}
+.sideArrow {
+  position: absolute;
+  right: -50px;
+  top: 16px;
+  background: #002e6d;
+  color: #fff;
+  padding: 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  min-width: 38px;
+  min-height: 38px;
+  align-items: center;
+  justify-content: center;
+  transition: all 100ms;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .sideArrow {
+    display: flex;
+  }
+  .sidebar {
+    display: flex;
+  }
+}
+.menuIcon {
+  display: none;
+}
+.closeIcon {
+  display: block;
+}
+@media (max-width: 991px) {
+  .sidebar {
+    left: -190px;
+    transition: all 100ms;
+  }
+  .toggleSidebar {
+    left: 0px;
+  }
+  .sideArrow {
+    transition: all 100ms;
+  }
+
+  .menuIcon {
+    display: block !important;
+  }
+  .closeIcon {
+    display: block !important;
+  }
+  .close {
+    display: none !important;
+  }
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0px 60px 0px;
+  @media (min-width: 1660px) {
+    padding: 38px 0px 110px 0px;
+  }
+}
+
+.sidebar-manage-strings-section {
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.15);
+  flex-grow: 2;
+  background: #fff !important;
+}
+.sidebar-button-holder {
+  display: flex;
+  padding: 0 18px;
+  margin: 40px 0px 20px 0px;
+}
+@media (min-width: 1660px) {
+  .sidebar-button-holder {
+    padding: 6px 18px;
+  }
+}
+
+button {
+  font-size: 14px;
+  padding: 12px 13px;
+  /* &.transparentbutton{
+            color: var(--white);
+            text-align: left;
+          } */
+  @media (min-width: 1660px) {
+    font-size: 18px;
+    padding: 15px 18px;
+  }
+}
+/* &.selected{
+          background-color: var(--highlightBlue);
+          border-radius: 0px;
+        } */
+
+.MuiCollapse-root {
+  background-color: var(--white);
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  padding: 20px 40px 10px 40px;
+}
+a {
+  display: block;
+  color: #8b8b8b;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 10px;
+  @media (min-width: 1660px) {
+    font-size: 18px;
+    margin-bottom: 13px;
+  }
+}

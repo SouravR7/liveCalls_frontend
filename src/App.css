@@ -1,3 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #272727;
+  --Primary: #002e6d;
+  --blue: #13327c;
+  --Secondary: #ffcc41;
+  --nightGray: #393939;
+  --gray2c: #2c2c2c;
+  --darkGray: #4b4b4b;
+  --midGray: #545454;
+  --graybd: #bdbdbd;
+  --gray97: #979797;
+  --gray74: #747474;
+  --gray80: #808080;
+  --lightGray: #969696;
+  --grayf9: #f9f9f9;
+  --graye5: #5e5e5e;
+  --neutrallightGray: #f1f1f1;
+  --mainlightGray: #f3f3f3;
+  --whiteGray: #eaeaea;
+  --lightGreen: #ebf7f9;
+  --midGreen: #4ecdc4;
+  --green4d: #4d708b;
+  --greenc0: #c0e4ec;
+  --nightBlue: #003862;
+  --highlightBlue: #3ab1ca;
+  --highlightOrange: #fc7753;
+  --lightOverlay: rgba(255, 255, 255, 0.8);
+  --darkOverlay: rgba(0, 0, 0, 0.35);
+  --success: #74b711;
+  --warning: #ffc628;
+  --error: #d72f2f;
+  --nightGray: #393939;
+}
+
 .App {
   text-align: center;
 }

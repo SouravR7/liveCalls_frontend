@@ -1,0 +1,8 @@
+.MMIBtnContainer {
+  display: flex;
+  bottom: 0;
+  width: 94%;
+  margin-bottom: 1em;
+  position: absolute;
+  justify-content: flex-end;
+}
